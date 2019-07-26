@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-exports.up = (knex, Promise) => {
+exports.up = (knex) => {
   return Promise.all([
     knex.schema.createTable('lists', (table) => {
       table.increments();
