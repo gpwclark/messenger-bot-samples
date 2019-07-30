@@ -34,7 +34,7 @@ exports.up = (knex) => {
   ]);
 };
 
-exports.down = (knex, Promise) => {
+exports.down = (knex) => {
   return Promise.all([
     knex.schema.dropTable('users_lists'),
     knex.schema.dropTable('lists_items'),
